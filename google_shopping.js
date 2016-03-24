@@ -1,5 +1,10 @@
 var data = require("./products.json")
 
-// Write your solutions below
+var count = 0; 
 
-console.log(data["items"]);
+for (var i = 0; i <data['items'].length; i++) {
+	if (data['items'][i].kind === 'shopping#product') {
+		count++;
+	}
+}
+console.log(count);
